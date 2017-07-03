@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _9.Christmas_tree
+{
+    class christmasTree
+    {
+        static void Main(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine());
+            int rowsOfPic = number + 1;
+            for (int row = 0; row < rowsOfPic; row++)
+            {
+                string emptySpaces =new string(' ',number-row);
+                string asteriks = new string('*', row);
+                Console.WriteLine($"{ emptySpaces} {asteriks} | {asteriks} {emptySpaces}");
+            }
+        }
+    }
+}
